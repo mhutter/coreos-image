@@ -1,8 +1,7 @@
 name: Create and publish CoreOS image
 
 on:
-  push:
-    branches: ["stable"]
+  push: {}
 
 env:
   REGISTRY: ghcr.io
