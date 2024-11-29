@@ -1,0 +1,13 @@
+# Cluster configuration
+secrets-encryption: true
+cluster-cidr: "10.42.0.0/16"
+service-cidr: "10.43.0.0/16"
+
+# Use Cilium
+flannel-backend: none
+disable-kube-proxy: true
+disable-network-policy: true
+
+# Disable unneeded features
+disable-helm-controller: true
+disable: [servicelb, traefik]
